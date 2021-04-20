@@ -39,5 +39,5 @@ The **WeatherGrid** renders historical weather data into a beautiful and interac
 * **month(_)** - sets the current month and return this chart. Default is ***0*** (January).
 * **data(_)** - Sets the historical weather data and return this chart.
 * **render()** - Renders the visualization and returns this chart.
-* **onhover(date)** - Occurs when mouse hovers over a cell.
-* **onclick(date)** - Occurs when mouse clicks over a cell.
+* **onhover(d)** - Occurs when mouse hovers over a cell.
+* **onclick(d)** - Occurs when mouse clicks over a cell.

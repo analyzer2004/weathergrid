@@ -1,5 +1,6 @@
 ﻿// https://github.com/analyzer2004/weathergrid
 // Copyright 2021 Eric Lo
+// For live demo and examples - https://observablehq.com/@analyzer2004/weather-grid
 class InfoGraphic {
     constructor(container) {
         this._container = container;        
