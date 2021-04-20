@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="../src/weathergrid.js"></script>
+
+    <script>
+        const icon = {
+            clear: "images/clear.svg",
+            cloudy: "images/cloudy.svg",
+            overcast: "images/overcast.svg",
+            rain: "images/rain.svg",
+            snow: "images/snow.svg"
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        d3.csv("sandiego.min.csv", d3.autoType).then(data => {
+            const svg = d3.select("body").append("svg");
+
+            const grid = new WeatherGrid(svg)
+                .month(5)
+                .icon(icon)
+                .data(data)
+                .onhover(d => console.log(d))
+                .onclick(d => console.log(d))
+                .render();
+        });
+    </script>
+</body>
+</html>
