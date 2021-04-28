@@ -36,6 +36,7 @@ The **WeatherGrid** renders historical weather data into a beautiful and interac
   * column.**low** - the column name of low temperature. Default is ***"min"***.
   * column.**high** - the column name of high temperature. Default is ***"max"***.
   * column.**avg** - the column name of average temperature. Default is ***"avg"***.
+  * column.**condition** - the column name of weather condition. Default is ***"condition"***.
 * **month(_)** - sets the current month and return this chart. Default is ***0*** (January).
 * **data(_)** - Sets the historical weather data and return this chart.
 * **render()** - Renders the visualization and returns this chart.
